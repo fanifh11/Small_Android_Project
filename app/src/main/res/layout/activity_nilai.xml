@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NilaiActivity">
+
+    <LinearLayout
+        android:id="@+id/linContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00838f"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgNilai"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/rapot" />
+
+            <TextView
+                android:id="@+id/txtJudulMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="Konversi Nilai"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linWrapNilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linTugas"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtTugas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:text="Nilai Tugas"
+                                android:textAlignment="center"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Input nilai tugas"
+                                app:hintTextColor="	#000000"
+                                app:suffixText=" 20%"
+                                app:errorEnabled="true"
+                                app:counterMaxLength="100"
+                                >
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/inputTugas"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:inputType="number"
+                                    android:background="#a7ffeb"
+
+
+                                    android:textSize="15dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linKehadiran"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtKehadiran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:text="Nilai Kehadiran"
+                                android:textAlignment="center"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+
+                                />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Input nilai kehadiran"
+                                app:hintTextColor="	#000000"
+                                app:suffixText="20%">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/inputKehadiran"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:inputType="number"
+                                    android:background="#a7ffeb"
+
+                                    android:textSize="15dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linUAS"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtUAS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:text="Nilai UAS"
+                                android:textAlignment="center"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+
+                                />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Masukkan nilai UAS"
+                                app:hintTextColor="	#000000"
+                                app:suffixText="30%"
+                                >
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/inputUAS"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textSize="15dp"
+                                    android:inputType="number"
+                                    android:background="#a7ffeb"
+                                    />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linUTS"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtUTS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:text="Nilai UTS"
+                                android:textAlignment="center"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Input Nilai UTS"
+                                app:hintTextColor="	#000000"
+                                app:suffixText="30%">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/inputUTS"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textSize="15dp"
+                                    android:inputType="number"
+                                    android:background="#a7ffeb"
+                                    />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linWrapButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnHitung"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_gravity="center"
+                            android:onClick="hitung"
+
+
+                            android:text="Hitung IP" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="20dp"
+
+
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+
+                                >
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#eeee"
+
+                                    android:text="Nilai IP Anda"
+                                    android:textAlignment="center"
+                                    android:padding="10dp"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:id="@+id/txtResult"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="30dp"
+                                    android:text="0.0 / E"
+                                    android:textAlignment="center"
+                                    android:textSize="35dp" />
+
+                                <TextView
+                                    android:id="@+id/txtKeterangan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Keterangan"
+                                    android:padding="10dp"
+                                    android:textAlignment="center"
+                                    android:background="#eeee"
+                                    android:textSize="20dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">App_tugas2</string>
+
+    <string-array name="konversi_suhu">
+        <item>Konversi Suhu Celcius Ke ?</item>
+        <item>Celcius ke Reamur</item>
+        <item>Celcius ke Kelvin</item>
+        <item>Celcius ke Farenheit</item>
+
+        <item>Konversi Suhu Reamur Ke ?</item>
+        <item>Reamur ke Celcius</item>
+        <item>Reamur ke Kelvin</item>
+        <item>Reamur ke Farenheit</item>
+
+        <item>Konversi Suhu Farenheit Ke ? </item>
+        <item>Farenheit ke Celcius </item>
+        <item>Farenheit ke Reamur </item>
+        <item>Farenheit ke Kelvin</item>
+    </string-array>
+
+
+</resources>
